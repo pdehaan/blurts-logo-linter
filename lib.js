@@ -1,4 +1,4 @@
-const assert = require("assert/strict");
+const assert = require("assert");
 const fs = require("fs/promises");
 const path = require("path");
 
@@ -36,7 +36,7 @@ async function globFiles(opts = {}, maxSize = EXPECTED_MAX_SIZE, ...files) {
       const { size } = await fs.stat(file);
       const res = sizeOf(file);
       try {
-        assert.deepEqual(
+        assert.deepStrictEqual(
           res,
           opts,
           `${filename} is ${stats(res)}. Expected ${stats(opts)}.`
