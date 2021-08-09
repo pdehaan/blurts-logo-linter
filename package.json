@@ -1,0 +1,30 @@
+{
+  "name": "blurts-logo-linter",
+  "description": "File dimensions/size/type linter for Firefox Monitor Breach Logos.",
+  "version": "1.0.0",
+  "author": "Peter deHaan",
+  "bin": {
+    "blurts-logo-linter": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/pdehaan/blurts-logo-linter/issues"
+  },
+  "dependencies": {
+    "arg": "^5.0.0",
+    "bytes": "^3.1.0",
+    "glob": "^7.1.7",
+    "image-size": "^1.0.0"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/blurts-logo-linter#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "lib.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/blurts-logo-linter.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
